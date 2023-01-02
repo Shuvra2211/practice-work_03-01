@@ -1,0 +1,560 @@
+/* common css section start */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+P{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Abril Fatface', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 
+img{
+    display: block;
+} */
+
+ul{
+    list-style-type: none;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-3{
+    width: calc(100% / 3);
+}
+
+/* common css section end */
+
+/* head css section start */
+
+#header #top_bar{
+    background-color: #0f2f44;
+}
+
+#header #top_bar .row{
+    justify-content: space-between;
+}
+
+#header #top_bar .p1{
+    font-size: 16px;
+    color: #fefefe;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 18px 0;
+}
+
+/* head css section end */
+
+/* nav css section start */
+nav{
+    text-align: justify;
+}
+
+nav div.row{
+    align-items: center;
+}
+
+nav .logo{
+    width: 25%;
+}
+
+nav div.menu{
+    width: 75%;
+}
+
+nav div .menu ul{
+    justify-content: flex-end;
+}
+
+nav .menu ul li a{
+    color: #222222;
+    text-transform: uppercase;
+    padding: 29px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    transition: 0.8s;
+    position: relative;
+    z-index: 1;
+}
+
+nav .menu ul li a::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: lightgrey;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.68s;
+    z-index: -1;
+    transform: scaley(0);
+    transform-origin: left;
+}
+
+nav .menu ul li a:hover::after,
+nav .menu ul li a.active::after{
+    width: 100%;
+    background: lightsalmon;
+    transform: scaley(1);
+}
+
+nav .menu ul li button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 22px;
+    margin-right: 10px;
+    transition: 0.68s;
+    color: #bfbfbf;
+    border: none;
+}
+
+nav .menu ul li button:hover{
+    color: grey;
+    background-color: red;
+}
+
+/* nav section css end */
+
+/* bannar section css start */
+
+#bannar{
+    height: 600px;
+    background-image: url(../img/bannar_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+#bannar .h2_1{
+    padding-top: 140px;
+}
+
+#bannar .h2_1{
+    font-size: 50px;
+    font-weight: 300;
+    color: #0f2f44;
+}
+
+#bannar .h1_1{
+    font-size: 80px;
+    color: #0f2f44;
+    text-transform: uppercase;
+}
+
+#bannar .h3_1{
+    font-size: 32px;
+    font-weight: 400;
+    color: #8484bf;
+    letter-spacing: 17px;
+}
+
+#bannar .p2{
+    font-size: 14px;
+    color: #444444;
+    width: 470px;
+    padding: 15px 0;
+   margin-bottom: 16px;
+}
+
+#bannar .bannar_ancor{
+    background-color: #8484bf;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px 16px;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: 0.75s;
+}
+
+
+#bannar .bannar_ancor:hover{
+    background-color: gold;
+    color: black;
+}
+
+
+#bannar button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none;
+    transition: 0.67s;
+    font-size: 30px;
+}
+
+#bannar button:hover{
+    color: red;
+    background-color: green;
+}
+
+/* bannar css section end */
+
+
+/* about section start */
+#about{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 35px;
+}
+
+#about .about_1,
+#about .about_2{
+    width: 50%;
+    margin-top: 100px;
+}
+
+#about .about_1 .h6_1{
+    font-size: 14px;
+    color: #0f2f44;
+    font-weight: 300;
+}
+
+#about .about_1 .h3_2{
+    font-size: 32px;
+    color: #0f2f44;
+    padding-bottom: 15px;
+}
+
+#about .about_1 .p3,
+#about .about_1 .p4{
+    font-size: 16px;
+    color: #0f2f44;
+    padding-bottom: 16px;
+}
+
+
+#about .about_1 .p4{
+    padding-left: 30px;
+}
+
+#about .about_1 .ancor{
+    margin-top: 20px;
+}
+
+#about .about_1 .about_ancor{
+    background-color: #ffc712;
+    margin-right: 30px;
+    transition: 0.72s;
+}
+
+#about .about_1 .about_ancor:hover{
+    color: blue;
+    background-color: gray;
+}
+
+#about .about_1 .about_ancor,
+#about .about_1 button{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 5px;
+    color: #0f2f44;
+}
+
+#about .about_1 button{
+    background-color: #ffffff;
+    transition: 0.7s;
+    border: none;
+}
+
+#about .about_1 button:hover{
+    color: blue;
+    background-color: green;
+}
+
+/* about css section end */
+
+/* skill css section start */
+#skill{
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+
+#skill .skill_info{
+    text-align: right;
+}
+
+#skill .skill_info .h6_1{
+    font-size: 14px;
+    color: #0f2f44;
+    font-weight: 300;
+}
+#skill .skill_info .h3_2{
+    font-size: 32px;
+    color: #0f2f44;
+    padding-bottom: 15px;
+}
+
+
+#skill .skill_info .p3{
+    font-size: 16px;
+    color: #0f2f44;
+    padding-bottom: 16px;
+}
+
+
+#skill .skill_item .skill_item_info{
+     width: calc(100% - 90px);
+     padding-bottom: 30px;
+     /* padding-top: 20px; */
+}
+
+#skill .skill_item .skill_item_info .p5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#skill .skill_item .skill_item_info .outside{
+    height: 10px;
+   border-radius: 10px;
+    background-color: #dddddd ;
+}
+
+#skill .skill_item .skill_item_info .inside{
+    height: 10px;
+    background-color: #2a4896;
+    width: 90%;
+    margin-left: auto;
+    border-radius: 0 10px 10px 0;
+}
+
+#skill .skill_item .skill_item_info .inside_1{
+    height: 10px;
+    background-color: #5d3b15;
+    width: 85%;
+    margin-left: auto;
+    border-radius: 0 10px 10px 0;
+}
+
+#skill .skill_item .skill_item_info .inside_2{
+    height: 10px;
+    background-color: #344a1f;
+    width: 75%;
+    margin-left: auto;
+    border-radius: 0 10px 10px 0;
+}
+
+#skill .skill_item .skill_item_info .inside_3{
+    height: 10px;
+    background-color: #392960;
+    width: 80%;
+    margin-left: auto;
+    border-radius: 0 10px 10px 0;
+}
+
+#skill .skill_item .skill_item_icons{
+     width: 90px;
+     padding-top: 3px;
+}
+
+#skill .skill_item .skill_item_info .span_1,
+#skill .skill_item .skill_item_info .span_3,
+#skill .skill_item .skill_item_info .span_5,
+#skill .skill_item .skill_item_info .span_7,
+#skill .skill_item .skill_item_info .span_2,
+#skill .skill_item .skill_item_info .span_4,
+#skill .skill_item .skill_item_info .span_6,
+#skill .skill_item .skill_item_info .span_8{
+    font-size: 14px;
+    color: #0f2f44;
+    font-weight: 500;
+}
+
+
+
+#skill .skill_item .skill_item_info .span_1{
+    margin-left: 48px;
+}
+
+#skill .skill_item .skill_item_info .span_3{
+    margin-left: 74px;
+}
+
+#skill .skill_item .skill_item_info .span_5{
+    margin-left: 120px;
+}
+
+#skill .skill_item .skill_item_info .span_7{
+    margin-left: 98px;
+}
+
+/* skill css section end */
+
+/* service css section start */
+#service{
+    background-color: #f5f5f5;
+    height: 425px;
+}
+
+#service .service_item{
+    align-items: center;
+    padding-left: 30px;
+}
+
+#service .service_item .ux_icon{
+       width: 20%;
+       background-color: #e9e9e9;
+       padding: 52px 8px;
+}
+
+#service .ux_info{
+     width: 80%;
+     background-color: #eeeeee;
+     padding: 22px 20px;
+}
+#service .service_info{
+    padding-bottom: 50px;
+    padding-top: 52px;
+    text-align: center;
+}
+
+#service .service_info .h6_1{
+    font-size: 14px;
+    color: #0f2f44;
+    font-weight: 300;
+}
+#service .service_info .h3_2{
+    font-size: 32px;
+    color: #0f2f44;
+    padding-bottom: 15px;
+}
+
+#service .service_item .ux_info .h3_3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    padding-bottom: 20px;
+}
+
+#service .service_item .ux_info .p6{
+    font-size: 14px;
+    color: #444444;
+}
+
+#service .service_item .web_icon{
+    width: 20%;
+    background-color: #e9e9e9;
+    padding: 53px 8px;
+}
+
+#service .web_info{
+  width: 80%;
+  background-color: #eeeeee;
+  padding: 19px 20px;
+}
+
+#service .service_item .web_info .h3_3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    padding-bottom: 20px;
+}
+
+#service .service_item .web_info .p6{
+    font-size: 14px;
+    color: #444444;
+}
+
+
+#service .service_item .video_icon{
+    width: 20%;
+    background-color: #e9e9e9;
+    padding: 45px 8px;
+}
+
+#service .video_info{
+  width: 80%;
+  background-color: #eeeeee;
+  padding: 19px 20px;
+}
+
+#service .service_item .video_info .h3_3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    padding-bottom: 20px;
+}
+
+#service .service_item .video_info .p6{
+    font-size: 14px;
+    color: #444444;
+}
+
+/* service css section end */
+
+/* portfolio css section start */
+#portfolio{
+    padding-bottom: 120px;
+}
+
+#portfolio .portfolio_info{
+    padding-bottom: 50px;
+    padding-top: 52px;
+    text-align: center;
+}
+
+#portfolio .portfolio_info .h6_1{
+    font-size: 14px;
+    color: #0f2f44;
+    font-weight: 300;
+}
+#portfolio .portfolio_info .h3_2{
+    font-size: 32px;
+    color: #0f2f44;
+    padding-bottom: 15px;
+}
+
+#portfolio button{
+    font-size: 20px;
+    font-weight: 500;
+    color: #0f2f44;
+    background-color: #ffc712;
+    border: none;
+    margin: auto;
+    margin-top: 55px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+#portfolio button:hover{
+    background-color: green;
+    border-radius: 10px;
+}
+
+/* portfolio css section end */
+
+/* testimonial css section start */
